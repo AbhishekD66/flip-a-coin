@@ -6,10 +6,10 @@
 }
 body{
     height: 100%;
-    background-color: #ffffff;
+    background-color: #b4b6c4;
 }
 .container{
-    background-color: #000000;
+    background-color: #ffffff;
     width: 400px;
     padding: 50px;
     position: absolute;
@@ -23,7 +23,7 @@ body{
 }
 .stats{
     text-align: right;
-    color: #ffffff;
+    color: #000000;
     font-weight: 500;
     line-height: 25px;
 }
@@ -87,5 +87,5 @@ button{
 #reset-button{
     background-color: #ff0000;
     border-color: #ff0303;
-    color: #000000;
+    color: #ffffff;
 }
