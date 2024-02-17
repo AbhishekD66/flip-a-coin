@@ -22,6 +22,7 @@ flipBtn.addEventListener("click", () => {
         tails++;
     }
     coinsound.play();
+    resetsound.pause();
     setTimeout(updateStats, 3000);
     disableButton();
 });
@@ -40,5 +41,6 @@ resetBtn.addEventListener("click",() => {
     heads = 0;
     tails = 0;
     resetsound.play();
+    coinsound.pause();
     updateStats();
 });
