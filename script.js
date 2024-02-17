@@ -1,5 +1,7 @@
 let heads = 0;
 let tails = 0;
+let coinsound = new Audio("coin1.wav");
+let resetsound = new Audio("reset.mp3");
 let coin = document.querySelector(".coin");
 let flipBtn = document.querySelector("#flip-button");
 let resetBtn = document.querySelector("#reset-button");
@@ -19,6 +21,7 @@ flipBtn.addEventListener("click", () => {
         }, 100);
         tails++;
     }
+    coinsound.play();
     setTimeout(updateStats, 3000);
     disableButton();
 });
@@ -36,5 +39,6 @@ resetBtn.addEventListener("click",() => {
     coin.style.animation = "none";
     heads = 0;
     tails = 0;
+    resetsound.play();
     updateStats();
 });
